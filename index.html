@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Spliter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>Bill Spliter</nav>
+    <main>
+      <div class="left">
+        <div class="bill">
+          <h3>Bill</h3>
+          <div class="billInput">
+            <span>₹</span>
+            <input type="number" placeholder="Amount" />
+          </div>
+        </div>
+
+        <div class="tip">
+          <h3>Select Tip</h3>
+          <div class="tips disabled">
+            <button>5%</button>
+            <button>10%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <button>75%</button>
+            <button>100%</button>
+          </div>
+          <input disabled type="number" placeholder="Tip?" />
+        </div>
+
+        <div class="peoples">
+          <h3>How Many Bro'z</h3>
+          <input disabled type="number" placeholder="How Many Bro'z" />
+        </div>
+
+        <button disabled class="genBill">Genrate Bill</button>
+      </div>
+
+      <div class="right">
+        <div class="amt">
+          <div>Tip Amount</div>
+          <div class="result"></div>
+        </div>
+
+        <div class="tot">
+          <div>Total</div>
+          <div class="result"></div>
+        </div>
+
+        <div class="each">
+          <div>Each Head</div>
+          <div class="result"></div>
+        </div>
+
+        <button disabled>Reset</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

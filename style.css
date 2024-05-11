@@ -1,0 +1,195 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    position: absolute;
+    top: 15%;
+    left: 28%;
+    display: flex;
+    align-items: center;
+
+    gap: 2vw;
+}
+
+h3 {
+    color: green;
+    margin-bottom: 1vh;
+    font-size: 1.7vw;
+}
+
+.bill input {
+    outline: none;
+    border: none;
+    width: 18vw;
+    font-size: 1.8vw;
+}
+
+.billInput {
+    font-size: 2vw;
+    border: 0.2vw solid grey;
+
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.tips {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1vw;
+    margin: 2vh 0;
+}
+
+.tips.disabled button{
+    cursor: not-allowed;
+    background-color: rgb(211, 211, 211);
+    opacity: 0.5;
+}
+
+
+.tips button {
+    height: 7vh;
+    width: 7vw;
+    color: black;
+    background-color: rgb(0, 216, 0);
+    border: none;
+    outline: none;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    color: black;
+    cursor: pointer;
+}
+
+.selectedTip{
+    opacity: 0.5;
+}
+
+
+
+.tips button:disabled {
+    cursor: not-allowed;
+    background-color: #ddd;
+}
+
+.tip input,
+.peoples input {
+    border: none;
+    outline: none;
+    background-color: rgb(213, 213, 213);
+    color: black;
+    padding: 1vh 1.5vw;
+    width: 20vw;
+    font-size: 1.3vw;
+    border-radius: 1.5vw;
+}
+
+input:disabled {
+    cursor: not-allowed;
+}
+
+
+.genBill {
+    margin: 2vw;
+    padding: 1vh 1vw;
+    width: 18vw;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 216, 0);
+    color: aliceblue;
+    font-size: larger;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+
+.genBill:disabled {
+    cursor: not-allowed;
+    background-color: #ddd;
+}
+
+.right {
+    background-color: #0077b6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 8vh;
+    padding: 0.5vw;
+    width: 20vw;
+    height: 45vh;
+    font-size: 1.5vw;
+    color: white;
+    border-radius: 1vw;
+}
+
+.right button:disabled{
+  cursor: not-allowed;
+}
+
+
+.right button {
+    padding: 1vh 1vw;
+    width: 18vw;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1.5vw;
+    border-radius: 1vw;
+    cursor: pointer;
+    color: black;
+}
+
+
+nav {
+    font-size: 3vw;
+    font-weight: 900;
+    border-bottom: 0.5vw solid grey;
+    padding: 0.2vw;
+    margin: 0 42.8vw;
+    margin-top: 0.5vw;
+}
+
+.right .amt,
+.tot,
+.each {
+    display: flex;
+    align-items: center;
+
+}
+
+.amt .result {
+    margin-left: 7vw;
+}
+
+.tot .result {
+    margin-left: 12vw;
+}
+
+.each .result {
+    margin-left: 8vw;
+}
+
+
+@media(max-width: 650px) {
+    main {
+        flex-direction: column;
+        left: 40%;
+        top: 10%;
+    }
+
+    .right {
+        height: 30vh;
+    }
+}
